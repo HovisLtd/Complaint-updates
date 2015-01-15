@@ -1,0 +1,232 @@
+﻿@model ComplaintsEntry.Models.t_Prm_Fct_Complaints
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>t_Prm_Fct_Complaints</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.coID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coCarelineRef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coCarelineRef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coExtractDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coExtractDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coSource)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coSource)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coRetailer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coRetailer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coDateEntered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coDateEntered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coBestBeforeDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coBestBeforeDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coRetailerStoreRef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coRetailerStoreRef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coRetailerHORef)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coRetailerHORef)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coProductionCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coProductionCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coJulianCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coJulianCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coAdditionalDetail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coAdditionalDetail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coComplaintCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coComplaintCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coElement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coElement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coSubElement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coSubElement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coConsumerFault)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coConsumerFault)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coConfirmedAS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coConfirmedAS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coDepartmentCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coDepartmentCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coCurrencySymbol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coCurrencySymbol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coTotalReimbursement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coTotalReimbursement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coPremierCSNCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coPremierCSNCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coManufacturingLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coManufacturingLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coDoughCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coDoughCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coBakery)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coBakery)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coRetailerAdmin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coRetailerAdmin)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

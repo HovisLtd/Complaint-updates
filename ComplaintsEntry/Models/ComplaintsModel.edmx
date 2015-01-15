@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CarelineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="t_Prm_Fct_Complaints">
+          <Key>
+            <PropertyRef Name="coReference" />
+          </Key>
+          <Property Name="coID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="coCarelineRef" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="coExtractDate" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="coReference" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="coType" Type="varchar" MaxLength="50" />
+          <Property Name="coSource" Type="varchar" MaxLength="50" />
+          <Property Name="coRetailer" Type="varchar" MaxLength="50" />
+          <Property Name="coDateEntered" Type="datetime" />
+          <Property Name="coBestBeforeDate" Type="datetime" />
+          <Property Name="coRetailerStoreRef" Type="varchar" MaxLength="50" />
+          <Property Name="coRetailerHORef" Type="varchar" MaxLength="50" />
+          <Property Name="coProductionCode" Type="varchar" MaxLength="50" />
+          <Property Name="coJulianCode" Type="varchar" MaxLength="10" />
+          <Property Name="coAdditionalDetail" Type="varchar(max)" />
+          <Property Name="coComplaintCategory" Type="varchar" MaxLength="100" />
+          <Property Name="coElement" Type="varchar" MaxLength="100" />
+          <Property Name="coSubElement" Type="varchar" MaxLength="100" />
+          <Property Name="coConsumerFault" Type="varchar" MaxLength="500" />
+          <Property Name="coConfirmedAS" Type="varchar" MaxLength="500" />
+          <Property Name="coDepartmentCode" Type="varchar" MaxLength="50" />
+          <Property Name="coCurrencySymbol" Type="char" MaxLength="1" />
+          <Property Name="coTotalReimbursement" Type="smallmoney" />
+          <Property Name="coPremierCSNCode" Type="varchar" MaxLength="20" />
+          <Property Name="coManufacturingLocation" Type="varchar" MaxLength="50" />
+          <Property Name="coDoughCode" Type="varchar" MaxLength="50" />
+          <Property Name="coBakery" Type="varchar" MaxLength="50" />
+          <Property Name="coRetailerAdmin" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="CarelineModelStoreContainer">
+          <EntitySet Name="t_Prm_Fct_Complaints" EntityType="Self.t_Prm_Fct_Complaints" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CarelineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="t_Prm_Fct_Complaints">
+          <Key>
+            <PropertyRef Name="coReference" />
+          </Key>
+          <Property Name="coID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="coCarelineRef" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="coExtractDate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="coReference" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="coType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coSource" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coRetailer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coDateEntered" Type="DateTime" Precision="3" />
+          <Property Name="coBestBeforeDate" Type="DateTime" Precision="3" />
+          <Property Name="coRetailerStoreRef" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coRetailerHORef" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coProductionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coJulianCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="coAdditionalDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="coComplaintCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="coElement" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="coSubElement" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="coConsumerFault" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="coConfirmedAS" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="coDepartmentCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coCurrencySymbol" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="coTotalReimbursement" Type="Decimal" Precision="10" Scale="4" />
+          <Property Name="coPremierCSNCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="coManufacturingLocation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coDoughCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coBakery" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="coRetailerAdmin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="CarelineEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="t_Prm_Fct_Complaints" EntityType="Self.t_Prm_Fct_Complaints" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CarelineModelStoreContainer" CdmEntityContainer="CarelineEntities">
+          <EntitySetMapping Name="t_Prm_Fct_Complaints">
+            <EntityTypeMapping TypeName="CarelineModel.t_Prm_Fct_Complaints">
+              <MappingFragment StoreEntitySet="t_Prm_Fct_Complaints">
+                <ScalarProperty Name="coID" ColumnName="coID" />
+                <ScalarProperty Name="coCarelineRef" ColumnName="coCarelineRef" />
+                <ScalarProperty Name="coExtractDate" ColumnName="coExtractDate" />
+                <ScalarProperty Name="coReference" ColumnName="coReference" />
+                <ScalarProperty Name="coType" ColumnName="coType" />
+                <ScalarProperty Name="coSource" ColumnName="coSource" />
+                <ScalarProperty Name="coRetailer" ColumnName="coRetailer" />
+                <ScalarProperty Name="coDateEntered" ColumnName="coDateEntered" />
+                <ScalarProperty Name="coBestBeforeDate" ColumnName="coBestBeforeDate" />
+                <ScalarProperty Name="coRetailerStoreRef" ColumnName="coRetailerStoreRef" />
+                <ScalarProperty Name="coRetailerHORef" ColumnName="coRetailerHORef" />
+                <ScalarProperty Name="coProductionCode" ColumnName="coProductionCode" />
+                <ScalarProperty Name="coJulianCode" ColumnName="coJulianCode" />
+                <ScalarProperty Name="coAdditionalDetail" ColumnName="coAdditionalDetail" />
+                <ScalarProperty Name="coComplaintCategory" ColumnName="coComplaintCategory" />
+                <ScalarProperty Name="coElement" ColumnName="coElement" />
+                <ScalarProperty Name="coSubElement" ColumnName="coSubElement" />
+                <ScalarProperty Name="coConsumerFault" ColumnName="coConsumerFault" />
+                <ScalarProperty Name="coConfirmedAS" ColumnName="coConfirmedAS" />
+                <ScalarProperty Name="coDepartmentCode" ColumnName="coDepartmentCode" />
+                <ScalarProperty Name="coCurrencySymbol" ColumnName="coCurrencySymbol" />
+                <ScalarProperty Name="coTotalReimbursement" ColumnName="coTotalReimbursement" />
+                <ScalarProperty Name="coPremierCSNCode" ColumnName="coPremierCSNCode" />
+                <ScalarProperty Name="coManufacturingLocation" ColumnName="coManufacturingLocation" />
+                <ScalarProperty Name="coDoughCode" ColumnName="coDoughCode" />
+                <ScalarProperty Name="coBakery" ColumnName="coBakery" />
+                <ScalarProperty Name="coRetailerAdmin" ColumnName="coRetailerAdmin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

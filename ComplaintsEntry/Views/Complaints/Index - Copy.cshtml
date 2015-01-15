@@ -1,0 +1,183 @@
+﻿@model IEnumerable<ComplaintsEntry.Models.t_Prm_Fct_Complaints>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.coID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coCarelineRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coExtractDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coSource)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coRetailer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coDateEntered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coBestBeforeDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coRetailerStoreRef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coRetailerHORef)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coProductionCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coJulianCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coAdditionalDetail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coComplaintCategory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coElement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coSubElement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coConsumerFault)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coConfirmedAS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coDepartmentCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coCurrencySymbol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coTotalReimbursement)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coPremierCSNCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coManufacturingLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coDoughCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coBakery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coRetailerAdmin)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.coID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coCarelineRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coExtractDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coSource)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coRetailer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coDateEntered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coBestBeforeDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coRetailerStoreRef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coRetailerHORef)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coProductionCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coJulianCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coAdditionalDetail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coComplaintCategory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coElement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coSubElement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coConsumerFault)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coConfirmedAS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coDepartmentCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coCurrencySymbol)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coTotalReimbursement)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coPremierCSNCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coManufacturingLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coDoughCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coBakery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coRetailerAdmin)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.coReference }) |
+            @Html.ActionLink("Details", "Details", new { id=item.coReference }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.coReference })
+        </td>
+    </tr>
+}
+
+</table>
