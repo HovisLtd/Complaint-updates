@@ -59,13 +59,9 @@ namespace ComplaintsEntry
             //   appSecret: "");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "602303626389-7ecq3ot4kcthr8mn9gb2arg395plhnt9.apps.googleusercontent.com",
-            //    ClientSecret = "MgKgmhU1IvYVD5JqLIushG0e"
-            //});
-            {
-                ClientId = "602303626389-v4cme52ch3ctkfj6gg4mdrckrvu46ink.apps.googleusercontent.com",
-                ClientSecret = "lzq03nFXNnYCujYTFnvkoTHy"
+             {
+                ClientId = "********.apps.googleusercontent.com",
+                ClientSecret = "*******"
             });
         }
     }
